@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { Upload, Bot, Search, FileText } from "lucide-react";
-import { Card } from './card';
+import { Card } from './Card';
 
 
 
