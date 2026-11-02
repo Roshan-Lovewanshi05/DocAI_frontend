@@ -1,0 +1,291 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color:#222;
+}
+
+
+/* Header */
+
+.header{
+  width: 100;
+  height: 70px;
+  display: flex;
+  align-items: center;
+
+  padding: 0 8%;
+  background-color:white;
+}
+
+.logo{
+  
+  display: flex;
+  align-items: center;
+  gap:8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-links{
+  display: flex;
+  gap: 35px;
+  margin-left: 80px;
+  margin-right: auto;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.auth-buttons{
+  display: flex;
+  gap: 12px;
+
+}
+
+.login-btn , .signup-btn{
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.login-btn{
+  background-color: white;
+  border: 1px solid #4f46e5;
+  color:#4f46e5;
+}
+
+.signup-btn{
+  background-color: #4f46e5;
+  color: white;
+  border:  1px solid #4f46e5;
+}
+
+
+@media (max-width: 768px){
+  .header{
+    padding: 0 5%;
+  }
+  .nav-links{
+    display: none;
+
+  }
+  .login-btn,.signup-btn{
+    padding: 8px 12px;
+  }
+}
+
+
+
+/* Hero */
+
+.hero{
+  background: #eef6ff;
+  padding: 60px 8%;
+}
+
+.hero-content{
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-text{
+  flex: 1;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #dfeaff;
+  color: #3159e8;
+  padding: 9px 16px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.hero-text h1{
+  font-size: 48px;
+  line-height: 1.15;
+  color: #142957;
+  margin: 0 0 22px;
+
+}
+.hero-text h1 span{
+  color: #3159e8;
+}
+
+.hero-text p{
+  max-width: 550px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #52627f;
+  margin-bottom: 30px;
+}
+
+.hero-btn{
+  border: none;
+  background: #3159e8;
+  color:white;
+  padding: 16px 28px;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.hero-btn:hover{
+  background: #2448c9;
+}
+
+
+
+.hero-image img {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  display: block;
+  border-radius: 40%;
+}
+
+
+/* Sign_up */
+
+.sing_up {
+  background: #eef6ff;
+  padding: 60px 35%;
+ 
+}
+
+.sign_up_content{
+  background: white;
+  padding: 35px;
+  width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.10);
+}
+
+.title_text{
+  text-align: center;
+  
+}
+.text_start{
+  text-align: center;
+}
+
+.sign_up_content label{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.sign_up_content input{
+  width: 100%;
+  height: 45px;
+  border: 1px solid #d5deeb;
+  border-radius: 8px;
+  padding: 0 12px;
+  box-sizing: border-box;
+
+}
+
+.sign_up_content button{
+  
+  margin-left: 30%;
+  margin-right: 50%;
+  width: 40%;
+  height: 48px;
+  margin-top: 20px;
+  border: none;
+  background: #3264f5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sign_up_content button:hover{
+  background: #2448c9;
+}
+
+.otp-boxes{
+  display: flex;
+  gap: 12px;
+
+}
+
+.otp-boxes input{
+  width: 60px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.no-account{
+   text-align: center;
+   margin-top: 10px;
+
+}
+.no-account span{
+  color: #3264f5;;
+}
+
+
+.key-feature{
+  padding: 20px 8%;
+}
+
+.key{
+  padding: 7px 12px;
+}
+
+.key-feature h1{
+  margin: 10px;
+}
+.key-feature p{
+ 
+  margin-bottom: 20px;
+}
+
+.card{
+  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 25px;
+}
+.Card-feature{
+  margin: 20px;
+ background: #fff;
+ border: 2px solid #eef6ff;
+ padding: 15px ;
+ text-align: left;
+}
+
+
+.chat{
+  padding: 10px;
+}
+
+.normal{
+  margin: 10px;
+}
